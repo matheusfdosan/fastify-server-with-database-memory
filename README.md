@@ -4,8 +4,6 @@
 Um servidor Fastify com banco de dados em memória e com um CRUD completo, utilizando Node.js.
 </p>
 
-![preview](./.github/preview.png)
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,6 +14,7 @@ Um servidor Fastify com banco de dados em memória e com um CRUD completo, utili
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
+![preview](./.github/preview.png)
 <br>
 
 ## 🚀 Tecnologias
