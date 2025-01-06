@@ -1,35 +1,21 @@
-// SERVIDOR CONVENCIONAL
-/*
-  import { createServer } from "node:http"
-
-  const server = createServer((request, response) => {
-    console.log("Entrou");
-    response.write("Ola, Mundo!")
-    return response.end()
-  })
-
-  server.listen(1324)
-*/
-
-// SERVIDOR COM FASTIFY
 import { fastify } from "fastify"
-import DatabaseMemory from "./database-memory.js"
+import DatabasePostgres from "./database-postgres.js"
 const server = fastify()
 
-const database = new DatabaseMemory()
+const database = new DatabasePostgres()
 
-server.get("/videos", (req) => {
+server.get("/videos", async (req) => {
   const search = req.query.search
 
-  const videos = database.list(search)
+  const videos = await database.list(search)
 
   return videos
 })
 
-server.post("/videos", (req, res) => {
+server.post("/videos", async (req, res) => {
   const { title, description, duration } = req.body
 
-  database.create({
+  await database.create({
     title,
     description,
     duration,
@@ -44,11 +30,11 @@ server.post("/videos", (req, res) => {
 
 // server.get("/videos/:id", (req, res) => {})
 
-server.put("/videos/:id", (req, res) => {
+server.put("/videos/:id", async (req, res) => {
   const videoId = req.params.id
   const { title, description, duration } = req.body
 
-  database.update(videoId, {
+  await database.update(videoId, {
     title,
     description,
     duration,
@@ -57,10 +43,10 @@ server.put("/videos/:id", (req, res) => {
   return res.status(200).send()
 })
 
-server.delete("/videos/:id", (req, res) => {
+server.delete("/videos/:id", async (req, res) => {
   const videoId = req.params.id
 
-  database.delete(videoId)
+  await database.delete(videoId)
   
   return res.status(204).send()
 })

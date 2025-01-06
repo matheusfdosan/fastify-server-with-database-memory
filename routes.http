@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:1324/videos/b916d572-99be-449f-8509-811ef20c30a5
+PUT http://localhost:1324/videos/fd549254-2aaf-4e36-8224-1deec8f119d8
 Content-Type: application/json
 
 {
@@ -21,4 +21,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:1324/videos/738e3f2b-6ead-4f1f-88df-c96b575833c6
+DELETE http://localhost:1324/videos/1362fb17-05d0-4648-9307-314ba1f97c01
