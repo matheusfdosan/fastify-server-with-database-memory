@@ -26,8 +26,6 @@ server.post("/videos", async (req, res) => {
   return res.status(201).send() // status code 201 significa que algo foi criado
 })
 
-
-
 // server.get("/videos/:id", (req, res) => {})
 
 server.put("/videos/:id", async (req, res) => {
@@ -47,8 +45,11 @@ server.delete("/videos/:id", async (req, res) => {
   const videoId = req.params.id
 
   await database.delete(videoId)
-  
+
   return res.status(204).send()
 })
 
-server.listen({ port: process.env.PORT ?? 1324 })
+server.listen({
+  host: "0.0.0.0",
+  port: process.env.PORT ?? 1324,
+})
