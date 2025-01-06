@@ -51,4 +51,4 @@ server.delete("/videos/:id", async (req, res) => {
   return res.status(204).send()
 })
 
-server.listen({ port: 1324 })
+server.listen({ port: process.env.PORT ?? 1324 })
