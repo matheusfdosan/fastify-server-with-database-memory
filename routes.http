@@ -1,8 +1,8 @@
-GET http://localhost:1324/videos
-# GET http://localhost:1324/videos?search=mentira
+GET https://fastify-server-c4sk.onrender.com/videos
+# GET https://fastify-server-c4sk.onrender.com/videos?search=mentira
 
 ###
-POST http://localhost:1324/videos
+POST https://fastify-server-c4sk.onrender.com/videos
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:1324/videos/9b28cacd-b7b2-409c-9802-39b171e47c0d
+PUT https://fastify-server-c4sk.onrender.com/videos/8ed1d930-e99f-41fe-8501-a6487504d3bd
 Content-Type: application/json
 
 {
@@ -22,4 +22,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:1324/videos/9b28cacd-b7b2-409c-9802-39b171e47c0d
+DELETE https://fastify-server-c4sk.onrender.com/videos/8ed1d930-e99f-41fe-8501-a6487504d3bd
