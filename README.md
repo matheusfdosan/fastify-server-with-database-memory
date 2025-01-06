@@ -4,6 +4,8 @@
 Um servidor Fastify com banco de dados em memória e com um CRUD completo, utilizando Node.js.
 </p>
 
+![preview](./.github/preview.png)
+
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
