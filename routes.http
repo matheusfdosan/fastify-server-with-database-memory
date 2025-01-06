@@ -1,0 +1,24 @@
+GET http://localhost:1324/videos?search=mentira
+
+###
+POST http://localhost:1324/videos
+Content-Type: application/json
+
+{
+  "title": "video legal",
+  "description": "video legal de verdade",
+  "duration": 120
+}
+
+###
+PUT http://localhost:1324/videos/b916d572-99be-449f-8509-811ef20c30a5
+Content-Type: application/json
+
+{
+  "title": "video não tão legal assim",
+  "description": "video legal de mentira",
+  "duration": 120
+}
+
+###
+DELETE http://localhost:1324/videos/738e3f2b-6ead-4f1f-88df-c96b575833c6
