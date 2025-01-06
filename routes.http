@@ -1,4 +1,5 @@
-GET http://localhost:1324/videos?search=mentira
+GET http://localhost:1324/videos
+# GET http://localhost:1324/videos?search=mentira
 
 ###
 POST http://localhost:1324/videos
