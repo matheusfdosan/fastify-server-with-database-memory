@@ -1,7 +1,7 @@
-<h1 align="center"> Servidor Fastify com banco de dados em memória </h1>
+<h1 align="center"> Servidor Fastify com Neon usando PostgreSQL </h1>
 
 <p align="center">
-Um servidor Fastify com banco de dados em memória e com um CRUD completo, utilizando Node.js.
+Um servidor Fastify com banco de dados no Neon utilizando PostgreSQL. Com um CRUD completo, utilizando Node.js.
 </p>
 
 <p align="center">
@@ -22,11 +22,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Node.js
 - Fastify
-- HTTP
+- PostgreSQL
+- Neon
 
 ## 💻 Projeto
 
-Este projeto implementa um servidor utilizando o framework [Fastify](https://www.fastify.io/), integrado a um banco de dados em memória. É ideal para prototipagem rápida, testes ou aplicações que não requerem persistência de dados.
+Este projeto é um servidor construído com o framework Fastify, utilizando o banco de dados PostgreSQL hospedado no Neon. Ele implementa um CRUD completo (Create, Read, Update, Delete) para exemplificar a integração entre as tecnologias de back-end e banco de dados.
 
 ## Contato
 
